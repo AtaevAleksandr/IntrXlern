@@ -11,12 +11,14 @@ import SwiftUI
 struct IntrXlernApp: App {
 
     @StateObject var lessonVM = BasedLearnViewModel()
+    @StateObject var introVM = IntroductionViewModel()
 
     var body: some Scene {
         WindowGroup {
             LoadingView()
                 .preferredColorScheme(.dark)
                 .environmentObject(lessonVM)
+                .environmentObject(introVM)
         }
     }
 }

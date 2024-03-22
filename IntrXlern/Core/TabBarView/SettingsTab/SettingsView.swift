@@ -15,10 +15,10 @@ struct SettingsView: View {
 
                 VStack(spacing: 8) {
                     SettingsButtonView(icon: "Privacy", title: "Privacy Policy") {
-                        openPrivacyLink()
+//                        openPrivacyLink()
                     }
                     SettingsButtonView(icon: "Support", title: "Support") {
-                        openSupportLink()
+//                        openSupportLink()
                     }
 
                     Spacer()

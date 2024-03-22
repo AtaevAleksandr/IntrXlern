@@ -38,7 +38,7 @@ struct HomeView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { title }
             .fullScreenCover(isPresented: $showIntro) {
-                LessonListView(show: $showIntro)
+                IntroductionView(show: $showIntro)
             }
             .fullScreenCover(isPresented: $showLearn) {
                 BasedLearnView(show: $showLearn)
@@ -60,5 +60,4 @@ extension HomeView {
 
 #Preview {
     HomeView()
-        .environmentObject(LessonViewModel())
 }

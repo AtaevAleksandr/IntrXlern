@@ -12,8 +12,6 @@ struct BasedLearnRowView: View {
     @EnvironmentObject var viewModel: BasedLearnViewModel
     @Environment(\.dismiss) var dismiss
 
-//    let lesson: BasedLearnModel
-
     @State private var currentLesson: BasedLearnModel
 
         init(lesson: BasedLearnModel) {

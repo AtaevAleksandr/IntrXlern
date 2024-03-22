@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TabBarView: View {
-    
+
     init() {
         let coloredNavBarAppearance = UINavigationBarAppearance()
         coloredNavBarAppearance.configureWithOpaqueBackground()
@@ -46,4 +46,5 @@ struct TabBarView: View {
     TabBarView()
         .preferredColorScheme(.dark)
         .environmentObject(BasedLearnViewModel())
+        .environmentObject(IntroductionViewModel())
 }
