@@ -18,15 +18,15 @@ struct LoadingView: View {
 
     var body: some View {
         ZStack {
-//            if isAlredyOnboarding && isInitialLoadingCompleted {
+            if isAlredyOnboarding && isInitialLoadingCompleted {
                 TabBarView()
-//            } else {
-//                OnboardingView()
-//            }
+            } else {
+                OnboardingView()
+            }
 
-//            if isLoading {
-//                SpinnerView()
-//            }
+            if isLoading {
+                SpinnerView()
+            }
         }
         .onAppear {
             fakeStartLoading()

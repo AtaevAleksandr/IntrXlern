@@ -18,13 +18,14 @@ struct WelcomeView: View {
                 .font(.system(size: 18, weight: .semibold))
                 .foregroundStyle(.white)
                 .multilineTextAlignment(.center)
-                .padding(.top, 40)
+                .padding(.top, 20)
 
             Spacer()
 
             Image(.chart)
                 .resizable()
                 .scaledToFit()
+                .padding(.horizontal)
 
             Spacer()
 
@@ -33,6 +34,7 @@ struct WelcomeView: View {
                 .foregroundStyle(.white)
                 .multilineTextAlignment(.center)
 
+            Spacer()
             Spacer()
             Spacer()
         }

@@ -25,7 +25,7 @@ struct BasedLearnView: View {
                             .foregroundStyle(.white)
                             .padding(.top, 16)
 
-                        VStack(spacing: 8) {
+                        VStack(spacing: 10) {
                             HStack {
                                 Spacer()
 
@@ -89,8 +89,8 @@ struct BasedLearnView: View {
                                 .background(Color.theme.notActive)
                                 .clipShape(RoundedRectangle(cornerRadius: 12))
                         }
-                        .padding()
                     }
+                    .padding()
                 }
             }
             .navigationBarTitleDisplayMode(.inline)

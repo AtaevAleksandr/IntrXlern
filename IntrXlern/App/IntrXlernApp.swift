@@ -12,6 +12,7 @@ struct IntrXlernApp: App {
 
     @StateObject var lessonVM = BasedLearnViewModel()
     @StateObject var introVM = IntroductionViewModel()
+    @StateObject var chartVM = ChartViewModel()
 
     var body: some Scene {
         WindowGroup {
@@ -19,6 +20,7 @@ struct IntrXlernApp: App {
                 .preferredColorScheme(.dark)
                 .environmentObject(lessonVM)
                 .environmentObject(introVM)
+                .environmentObject(chartVM)
         }
     }
 }

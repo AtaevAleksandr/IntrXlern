@@ -16,6 +16,7 @@ struct TabBarView: View {
 
         UINavigationBar.appearance().standardAppearance = coloredNavBarAppearance
         UINavigationBar.appearance().compactAppearance = coloredNavBarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredNavBarAppearance
 
         let coloredTabBarAppearance = UITabBarAppearance()
         coloredTabBarAppearance.configureWithOpaqueBackground()
@@ -40,11 +41,4 @@ struct TabBarView: View {
         }
         .accentColor(Color.theme.customPurple)
     }
-}
-
-#Preview {
-    TabBarView()
-        .preferredColorScheme(.dark)
-        .environmentObject(BasedLearnViewModel())
-        .environmentObject(IntroductionViewModel())
 }

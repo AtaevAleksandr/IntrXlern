@@ -18,9 +18,7 @@ struct HomeView: View {
                 AppBackgroundView()
 
                 VStack {
-                    Image(.chart)
-                        .resizable()
-                        .scaledToFit()
+                    ChartView()
 
                     VStack(spacing: 10) {
                         HomeButtonView(title: "Introduction", icon: "Intro") {
@@ -31,6 +29,7 @@ struct HomeView: View {
                             showLearn.toggle()
                         }
                     }
+                    .padding(.top, 45)
                     Spacer()
                 }
                 .padding()
@@ -60,4 +59,6 @@ extension HomeView {
 
 #Preview {
     HomeView()
+        .environmentObject(IntroductionViewModel())
+        .environmentObject(BasedLearnViewModel())
 }

@@ -54,6 +54,7 @@ struct BasedLearnRowView: View {
                     .opacity(viewModel.isLastLesson(currentLesson) ? 0 : 1)
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 title
                 dismissButton
@@ -65,7 +66,7 @@ struct BasedLearnRowView: View {
             }
         }
         .navigationViewStyle(.stack)
-        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 
     private func goToNextLesson() {

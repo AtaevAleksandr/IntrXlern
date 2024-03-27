@@ -38,9 +38,8 @@ struct IntroductionView: View {
                             .font(.system(size: 18, weight: .semibold))
                             .foregroundStyle(.white)
                             .padding(.top, 16)
-                            .padding(.horizontal)
 
-                        VStack(spacing: 8) {
+                        VStack(spacing: 10) {
                             HStack {
                                 Spacer()
 
@@ -84,7 +83,6 @@ struct IntroductionView: View {
                                             break
                                         }
                                     } label: {
-
                                         HStack(spacing: 15) {
                                             Text("Lesson \(quiz.id)")
                                                 .font(.system(size: 16, weight: .semibold))
@@ -134,8 +132,8 @@ struct IntroductionView: View {
                                 }
                             }
                         }
-                        .padding()
                     }
+                    .padding()
                 }
             }
             .navigationBarTitleDisplayMode(.inline)

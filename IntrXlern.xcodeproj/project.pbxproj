@@ -71,6 +71,9 @@
 		5B79C95A2BAC7848002BC3C6 /* BasedLearnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79C9592BAC7848002BC3C6 /* BasedLearnModel.swift */; };
 		5B79C95C2BAC79C6002BC3C6 /* BasedLearnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79C95B2BAC79C6002BC3C6 /* BasedLearnViewModel.swift */; };
 		5B79C95E2BAC7A4B002BC3C6 /* BasedLearnRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79C95D2BAC7A4B002BC3C6 /* BasedLearnRowView.swift */; };
+		5B8209312BAF60FC00304737 /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8209302BAF60FC00304737 /* ChartModel.swift */; };
+		5B8209332BAF611B00304737 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8209322BAF611B00304737 /* ChartViewModel.swift */; };
+		5B92D8072BAE26FB00D78CB3 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92D8062BAE26FB00D78CB3 /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +142,9 @@
 		5B79C9592BAC7848002BC3C6 /* BasedLearnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasedLearnModel.swift; sourceTree = "<group>"; };
 		5B79C95B2BAC79C6002BC3C6 /* BasedLearnViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasedLearnViewModel.swift; sourceTree = "<group>"; };
 		5B79C95D2BAC7A4B002BC3C6 /* BasedLearnRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasedLearnRowView.swift; sourceTree = "<group>"; };
+		5B8209302BAF60FC00304737 /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
+		5B8209322BAF611B00304737 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		5B92D8062BAE26FB00D78CB3 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,6 +437,9 @@
 		5B79C9462BAC582A002BC3C6 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
+				5B82092D2BAF60D600304737 /* Model */,
+				5B82092F2BAF60EA00304737 /* View */,
+				5B82092E2BAF60E100304737 /* ViewModel */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -495,6 +504,30 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5B82092D2BAF60D600304737 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B8209302BAF60FC00304737 /* ChartModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B82092E2BAF60E100304737 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B8209322BAF611B00304737 /* ChartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B82092F2BAF60EA00304737 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B92D8062BAE26FB00D78CB3 /* ChartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -511,6 +544,8 @@
 			dependencies = (
 			);
 			name = IntrXlern;
+			packageProductDependencies = (
+			);
 			productName = IntrXlern;
 			productReference = 5B79C8EA2BAB0051002BC3C6 /* IntrXlern.app */;
 			productType = "com.apple.product-type.application";
@@ -539,6 +574,8 @@
 				Base,
 			);
 			mainGroup = 5B79C8E12BAB0051002BC3C6;
+			packageReferences = (
+			);
 			productRefGroup = 5B79C8EB2BAB0051002BC3C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -575,6 +612,7 @@
 				5B2005E12BAD70E700988D61 /* FifthInfoQuizView.swift in Sources */,
 				5B79C9412BAC54AF002BC3C6 /* SignalRowView.swift in Sources */,
 				5B2005FC2BAD725F00988D61 /* TwelfthQuizGameView.swift in Sources */,
+				5B92D8072BAE26FB00D78CB3 /* ChartView.swift in Sources */,
 				5B79C95E2BAC7A4B002BC3C6 /* BasedLearnRowView.swift in Sources */,
 				5B2006052BAD742800988D61 /* IntroductionViewModel.swift in Sources */,
 				5B2005942BAD642300988D61 /* QuizModel.swift in Sources */,
@@ -596,6 +634,7 @@
 				5B79C9282BAC0D08002BC3C6 /* DepNowView.swift in Sources */,
 				5B79C9072BAB0171002BC3C6 /* LoadingView.swift in Sources */,
 				5B2005E22BAD70E700988D61 /* TenthInfoQuizView.swift in Sources */,
+				5B8209312BAF60FC00304737 /* ChartModel.swift in Sources */,
 				5B79C9242BAC0CF7002BC3C6 /* PushNotificationView.swift in Sources */,
 				5B2005CE2BAD698400988D61 /* CustomAlertView.swift in Sources */,
 				5B79C91C2BAC043C002BC3C6 /* DemoRateAppView.swift in Sources */,
@@ -609,6 +648,7 @@
 				5B2005FA2BAD725F00988D61 /* EighthQuizGameView.swift in Sources */,
 				5B2005F92BAD725F00988D61 /* ThirteenthQuizGameView.swift in Sources */,
 				5B2005E42BAD70E700988D61 /* EleventhInfoQuizView.swift in Sources */,
+				5B8209332BAF611B00304737 /* ChartViewModel.swift in Sources */,
 				5B79C9122BAC02C5002BC3C6 /* OnboardingView.swift in Sources */,
 				5B2005DF2BAD70E700988D61 /* EighthInfoQuizView.swift in Sources */,
 				5B79C9102BAC0213002BC3C6 /* OnboardingBackgroundView.swift in Sources */,
