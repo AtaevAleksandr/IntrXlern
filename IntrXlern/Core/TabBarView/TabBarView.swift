@@ -33,12 +33,23 @@ struct TabBarView: View {
             HomeView()
                 .tabItem { Label("Home", image: "Home") }.tag(1)
 
+            AnalyticsView()
+                .tabItem { Label("Analytics", image: "Analytics") }.tag(2)
+
             SignalsView(viewModel: SignalViewModel())
-                .tabItem { Label("Signals", image: "Signals") }.tag(2)
+                .tabItem { Label("Signals", image: "Signals") }.tag(3)
 
             SettingsView()
-                .tabItem { Label("Settings", image: "Settings") }.tag(3)
+                .tabItem { Label("Settings", image: "Settings") }.tag(4)
         }
         .accentColor(Color.theme.customPurple)
     }
+}
+
+#Preview {
+    TabBarView()
+        .environmentObject(SignalViewModel())
+        .environmentObject(ChartViewModel())
+        .environmentObject(BasedLearnViewModel())
+        .environmentObject(IntroductionViewModel())
 }

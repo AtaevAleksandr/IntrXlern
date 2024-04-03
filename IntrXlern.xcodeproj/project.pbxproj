@@ -74,6 +74,9 @@
 		5B8209312BAF60FC00304737 /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8209302BAF60FC00304737 /* ChartModel.swift */; };
 		5B8209332BAF611B00304737 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8209322BAF611B00304737 /* ChartViewModel.swift */; };
 		5B92D8072BAE26FB00D78CB3 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92D8062BAE26FB00D78CB3 /* ChartView.swift */; };
+		5BE54AF32BBD8B4700D63A1C /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE54AF22BBD8B4700D63A1C /* AnalyticsView.swift */; };
+		5BE54AF82BBD90D600D63A1C /* WebWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE54AF72BBD90D600D63A1C /* WebWidgetView.swift */; };
+		5BE54AFC2BBDAF4500D63A1C /* ChoosenWebWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE54AFB2BBDAF4500D63A1C /* ChoosenWebWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +148,9 @@
 		5B8209302BAF60FC00304737 /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
 		5B8209322BAF611B00304737 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		5B92D8062BAE26FB00D78CB3 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		5BE54AF22BBD8B4700D63A1C /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		5BE54AF72BBD90D600D63A1C /* WebWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebWidgetView.swift; sourceTree = "<group>"; };
+		5BE54AFB2BBDAF4500D63A1C /* ChoosenWebWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosenWebWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +235,7 @@
 		5B79C8FC2BAB0099002BC3C6 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				5BE54AF62BBD90B300D63A1C /* WebForWidgets */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -268,6 +275,7 @@
 				5B79C92C2BAC4AA0002BC3C6 /* Background */,
 				5B79C92D2BAC4AAF002BC3C6 /* TabBarView.swift */,
 				5B79C92B2BAC4A9F002BC3C6 /* HomeTab */,
+				5BE54AF12BBD8B0F00D63A1C /* AnalyticsTab */,
 				5B79C92A2BAC4A9D002BC3C6 /* SignalsTab */,
 				5B79C9292BAC4A9B002BC3C6 /* SettingsTab */,
 			);
@@ -528,6 +536,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5BE54AF12BBD8B0F00D63A1C /* AnalyticsTab */ = {
+			isa = PBXGroup;
+			children = (
+				5BE54AF22BBD8B4700D63A1C /* AnalyticsView.swift */,
+				5BE54AFB2BBDAF4500D63A1C /* ChoosenWebWidget.swift */,
+			);
+			path = AnalyticsTab;
+			sourceTree = "<group>";
+		};
+		5BE54AF62BBD90B300D63A1C /* WebForWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				5BE54AF72BBD90D600D63A1C /* WebWidgetView.swift */,
+			);
+			path = WebForWidgets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -649,6 +674,7 @@
 				5B2005F92BAD725F00988D61 /* ThirteenthQuizGameView.swift in Sources */,
 				5B2005E42BAD70E700988D61 /* EleventhInfoQuizView.swift in Sources */,
 				5B8209332BAF611B00304737 /* ChartViewModel.swift in Sources */,
+				5BE54AFC2BBDAF4500D63A1C /* ChoosenWebWidget.swift in Sources */,
 				5B79C9122BAC02C5002BC3C6 /* OnboardingView.swift in Sources */,
 				5B2005DF2BAD70E700988D61 /* EighthInfoQuizView.swift in Sources */,
 				5B79C9102BAC0213002BC3C6 /* OnboardingBackgroundView.swift in Sources */,
@@ -666,7 +692,9 @@
 				5B79C9162BAC03FA002BC3C6 /* WelcomeView.swift in Sources */,
 				5B2005E62BAD70E700988D61 /* FourthInfoQuizView.swift in Sources */,
 				5B79C9182BAC040A002BC3C6 /* NotificationsView.swift in Sources */,
+				5BE54AF32BBD8B4700D63A1C /* AnalyticsView.swift in Sources */,
 				5B79C9322BAC4B8A002BC3C6 /* HomeView.swift in Sources */,
+				5BE54AF82BBD90D600D63A1C /* WebWidgetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

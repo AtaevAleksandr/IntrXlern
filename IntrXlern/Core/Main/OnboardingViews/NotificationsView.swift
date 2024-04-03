@@ -10,7 +10,7 @@ import SwiftUI
 struct NotificationsView: View {
     var body: some View {
         VStack {
-            Text("Don't miss out on new update")
+            Text("Don't miss out on new signal")
                 .font(.system(size: 24, weight: .bold))
                 .foregroundStyle(.white)
                 .multilineTextAlignment(.center)
